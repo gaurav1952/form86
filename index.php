@@ -1,39 +1,39 @@
-<!-- <?php
-$insert = false;
-if(isset($_POST['first_name'])){
-    $server = "localhost";
-    $username = "root";
-    $password = "";
+<!-- // php here //
+// $insert = false;
+// if(isset($_POST['first_name'])){
+//     $server = "localhost";
+//     $username = "root";
+//     $password = "";
 
-    $con = mysqli_connect( $server, $username, $password);
+//     $con = mysqli_connect( $server, $username, $password);
     
-    if(!$con)  {
-        die("connetion to this database fail" .mysqli_connect_error());
-    }
+//     if(!$con)  {
+//         die("connetion to this database fail" .mysqli_connect_error());
+//     }
     // else{
     //     echo"succes conneting to the database";
     // };
- $first_name = $_POST['first_name'];
- $last_name = $_POST['last_name'];
- $email = $_POST['email'];
- $coments = $_POST['coments'];
+//  $first_name = $_POST['first_name'];
+//  $last_name = $_POST['last_name'];
+//  $email = $_POST['email'];
+//  $coments = $_POST['coments'];
  
-    $sql = "INSERT INTO `stel_info`.`slection_info` (`first_name`, `last_name`,
-     `email`, `coments`, `date`) VALUES ('$first_name', '$last_name', '$email', 
-     '$coments', current_timestamp())";
-    //  echo $sql;
+//     $sql = "INSERT INTO `stel_info`.`slection_info` (`first_name`, `last_name`,
+//      `email`, `coments`, `date`) VALUES ('$first_name', '$last_name', '$email', 
+//      '$coments', current_timestamp())";
+//     //  echo $sql;
 
-    if($con->query($sql) == true){
-        // echo "<div id='liveAlertPlaceholder'>Form sumited succesfully</div>
-        // ";
-        $insert = true;
-    }
-    else{
-        echo "ERROR: $sql <br> $con -> error";
-    };
-    $con-> close() ;
-}   
-?>
+//     if($con->query($sql) == true){
+//         // echo "<div id='liveAlertPlaceholder'>Form sumited succesfully</div>
+//         // ";
+//         $insert = true;
+//     }
+//     else{
+//         echo "ERROR: $sql <br> $con -> error";
+//     };
+//     $con-> close() ;
+// }   
+// ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -55,11 +55,11 @@ if(isset($_POST['first_name'])){
         <span class="text"> Forms for students selection: </span>
       </div>
     </nav>
-    <?php
-    if($insert == true){
-   echo" <div id='liveAlertPlaceholder'>Form sumited succesfully</div>";
-    };
-    ?>
+   // php here
+  //   if($insert == true){
+  //  echo" <div id='liveAlertPlaceholder'>Form sumited succesfully</div>";
+  //   };
+    // ?>
     <div class="container">
       <form action="index.php" method="POST">
         <div class="row">
