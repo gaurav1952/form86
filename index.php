@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 $insert = false;
 if(isset($_POST['first_name'])){
     $server = "localhost";
@@ -137,4 +137,4 @@ if (alertTrigger) {
 </script>
   </body>
 </html>
-
+ -->
